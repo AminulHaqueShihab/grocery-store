@@ -6,6 +6,7 @@ import { Heading } from './components/Heading';
 import Navbar from './components/Navbar';
 import Path from './components/Path';
 import ProductDetails from './components/ProductDetails';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ProductDetails />
       <Details />
       {/* <Carousel /> */}
+      <Footer />
     </>
     
   );

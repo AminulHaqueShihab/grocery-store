@@ -2,7 +2,8 @@ import React from 'react'
 import Vegetable from '../assets/vegetable.png';
 const Product = (props) => {
   return (
-    <div className='p-4 m-4 bg-white rounded-md w-[250px] hover:scale-105 ease-in-out duration-300'>
+    <div className='p-4 m-4 bg-white rounded-md w-[250px] 
+     shadow-md hover:scale-105 ease-in-out duration-300'>
         <button class="w-10 h-10 rounded-full 
                        bg-[#0db04b] hover:bg-[#4abd88] text-white font-bold text-3xl text-center">
             +

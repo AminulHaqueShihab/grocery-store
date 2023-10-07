@@ -21,7 +21,7 @@ const Navbar = () => {
             <div onClick={handleNav} className='block mr-5 cursor-pointer'>
                 {nav ? <RiCloseFill size={30}/> : <HiMenuAlt2 size={30} />}
             </div>
-            <img src={Logo} alt='logo' className='w-10 h-10 mr-10 cursor-pointer'/>
+            <img src={Logo} alt='logo' className='w-10 h-10 mr-10 cursor-pointer hover:scale-105'/>
             <ul className='hidden lg:flex'>
                 <li className='p-4 cursor-pointer flex justify-center items-center'>Home</li>
                 <li className='p-4 cursor-pointer flex justify-center items-center'>Offers <RiArrowDropDownLine size={20}/></li>
@@ -46,7 +46,7 @@ const Navbar = () => {
                 </div>
                 <p className='text-xl text-gray-400 mx-7 hidden md:flex'>|</p>
                 <div >
-                    <img src={Profile} alt="profile photo" className='w-12 h-12 cursor-pointer' />
+                    <img src={Profile} alt="profile photo" className='w-12 h-12 cursor-pointer hover:scale-105' />
                 </div>
             </div>
             
@@ -56,15 +56,15 @@ const Navbar = () => {
         
         <ul className={nav ? 'fixed left-0 top-0 w-[50%] md:w-[25%]  h-full border-r bg-white ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
             <div className='flex justify-end'>
-                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>REACT.</h1>
+                <h1 className='w-full text-3xl font-bold text-[#00df9a] m-4'>Grocery.</h1>
                 <div onClick={handleNav} className='m-3 cursor-pointer'><RiCloseFill size={30}/></div>
             </div>
             
-            <li className='p-4'>Home</li>
-            <li className='p-4'>Company</li>
-            <li className='p-4'>Resources</li>
-            <li className='p-4'>About</li>
-            <li className='p-4'>Contact</li>
+            <li className='p-4 cursor-pointer hover:scale-105'>Home</li>
+            <li className='p-4 cursor-pointer hover:scale-105'>Company</li>
+            <li className='p-4 cursor-pointer hover:scale-105'>Resources</li>
+            <li className='p-4 cursor-pointer hover:scale-105'>About</li>
+            <li className='p-4 cursor-pointer hover:scale-105'>Contact</li>
         </ul>
     </div>
   )

@@ -10,8 +10,8 @@ const Details = () => {
         {details ? 
         <div>
             <div className='flex mb-2'>
-                <h2 onClick={() => handleDetails(!details) } className='font-bold text-2xl mr-5 cursor-pointer'>Details</h2>
-                <h2 onClick={() => handleDetails(!details) } className=' text-2xl cursor-pointer'>More Information</h2>
+                <h2 onClick={() => handleDetails(!details) } className='font-bold text-2xl mr-5 cursor-pointer hover:scale-105'>Details</h2>
+                <h2 onClick={() => handleDetails(!details) } className=' text-2xl cursor-pointer hover:scale-105'>More Information</h2>
             </div>
             <hr className='mb-5'/>
             <p>Lorem Ipsum is simply dummy text of the 
@@ -26,8 +26,8 @@ const Details = () => {
     : 
     <div>
         <div className='flex mb-2'>
-            <h2 onClick={() => handleDetails(!details) } className='text-2xl mr-5 cursor-pointer'>Details</h2>
-            <h2 onClick={() => handleDetails(!details) } className='font-bold text-2xl cursor-pointer'>More Information</h2>
+            <h2 onClick={() => handleDetails(!details) } className='text-2xl mr-5 cursor-pointer hover:scale-105'>Details</h2>
+            <h2 onClick={() => handleDetails(!details) } className='font-bold text-2xl cursor-pointer hover:scale-105'>More Information</h2>
         </div>
         <hr className='mb-5'/>
         <p>There are many variations of passages of 

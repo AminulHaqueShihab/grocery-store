@@ -50,9 +50,9 @@ const ProductDetails = () => {
                         toplet with Shakti toilet cleaner</p>
                 </div>
                 <div className='flex gap-3 mt-5'>
-                    <button className='bg-[#0db04b] flex py-2 px-20 rounded-md items-center text-white'><span className='mr-2'><GrCart size={20}/></span> Cart</button>
-                    <button className='bg-white p-2' p-2><MdOutlineFavoriteBorder size={30}/></button>
-                    <button className='bg-white p-2'><FiShare2 size={30}/></button>
+                    <button className='bg-[#0db04b] hover:bg-white hover:text-black font-bold flex py-2 px-20 rounded-md items-center text-white'><span className='mr-2'><GrCart size={20}/></span>Add to Cart</button>
+                    <button className='bg-white hover:bg-[#0db04b] p-2 rounded-md' p-2><MdOutlineFavoriteBorder size={30}/></button>
+                    <button className='bg-white hover:bg-[#0db04b] p-2 rounded-md'><FiShare2 size={30}/></button>
                 </div>
                 
             </div>
@@ -65,27 +65,27 @@ const ProductDetails = () => {
                     <div className='mr-10 mb-5'>
                         <h3 className='font-semibold text-sm'>Fresh Cilantro</h3>
                         <p className='text-xs'>200gm</p>
-                        <h2 className='font-bold'>BDT. 144</h2>
+                        <h2 className='font-bold'>BDT. 40</h2>
                     </div>
-                    <IoAddCircleSharp size={30} className=''/>
+                    <IoAddCircleSharp size={30} className='hover:scale-105 cursor-pointer'/>
                 </div>
                 <div className='flex '>
                     <img src={Potato} alt="" className='w-10 h-10 mr-5' />
                     <div className='mr-10 mb-5'>
                         <h3 className='font-semibold text-sm'>Fresh Potato</h3>
-                        <p className='text-xs'>200gm</p>
-                        <h2 className='font-bold'>BDT. 144</h2>
+                        <p className='text-xs'>1000gm</p>
+                        <h2 className='font-bold'>BDT. 80</h2>
                     </div>
-                    <IoAddCircleSharp size={30} className='ml-2'/>
+                    <IoAddCircleSharp size={30} className='ml-2 hover:scale-105 cursor-pointer'/>
                 </div>
                 <div className='flex'>
                     <img src={Tomato} alt="" className='w-10 h-10 mr-5' />
                     <div className='mr-10 mb-5'>
                         <h3 className='font-semibold text-sm'>Fresh Tomato</h3>
-                        <p className='text-xs'>200gm</p>
-                        <h2 className='font-bold'>BDT. 144</h2>
+                        <p className='text-xs'>500gm</p>
+                        <h2 className='font-bold'>BDT. 200</h2>
                     </div>
-                    <IoAddCircleSharp size={30} className=''/>
+                    <IoAddCircleSharp size={30} className='hover:scale-105 cursor-pointer'/>
                 </div>
             </div>
             <div className='w-full '>

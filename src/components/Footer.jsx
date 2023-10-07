@@ -15,39 +15,39 @@ const footer = () => {
                     industry's standard dummy text ever since the 1500s,
                 </p>
                 <p className='flex items-center gap-2 mb-3'><span><FiHeadphones/></span>Hotline 24/7</p>
-                <p className='font-bold text-lg ml-5 mb-3'>+8801234567890</p>
+                <p className='font-bold text-lg ml-5 mb-3 cursor-pointer'>+8801234567890</p>
                 <p className='flex items-center gap-2 mb-3'><span><BiHomeAlt/></span>Random RD, Dhaka, Bangladesh</p>
-                <p className='flex items-center gap-2'><span><HiOutlineMail/></span>xyz@gmail.com</p>
+                <p className='flex items-center gap-2 cursor-pointer' ><span><HiOutlineMail/></span>xyz@gmail.com</p>
             </div>
             <div>
                 <p className='font-bold text-lg mb-5'>Useful Links</p>
-                <p className=''>About us</p>
-                <p>Contact</p>
-                <p>FAQ</p>
-                <p>career</p>
-                <p>Policy</p>
-                <p>Offer</p>
+                <p className='text-sm mb-2 cursor-pointer'>About us</p>
+                <p className='text-sm mb-2 cursor-pointer'>Contact</p>
+                <p className='text-sm mb-2 cursor-pointer'>FAQ</p>
+                <p className='text-sm mb-2 cursor-pointer'>career</p>
+                <p className='text-sm mb-2 cursor-pointer'>Policy</p>
+                <p className='text-sm mb-2 cursor-pointer'>Offer</p>
             </div>
             <div>
                 <p className='font-bold text-lg mb-5'>Policy</p>
-                <p>Terms of Use</p>
-                <p>Privacy Policy</p>
-                <p>Return & Refnd</p>
-                <p className='text-[#4abd88]'>Reward Redemption</p>
+                <p className='text-sm mb-2 cursor-pointer'>Terms of Use</p>
+                <p className='text-sm mb-2 cursor-pointer'>Privacy Policy</p>
+                <p className='text-sm mb-2 cursor-pointer'>Return & Refnd</p>
+                <p className='text-[#4abd88] text-sm mb-2 cursor-pointer'>Reward Redemption</p>
             </div>
             <div>
                 <p className='font-bold text-lg mb-5'>Account</p>
-                <p>Sign In</p>
-                <p>View Cart</p>
-                <p>My Wishlist</p>
+                <p className='text-sm mb-2 cursor-pointer'>Sign In</p>
+                <p className='text-sm mb-2 cursor-pointer'>View Cart</p>
+                <p className='text-sm mb-2 cursor-pointer'>My Wishlist</p>
             </div>
             <div>
-                <p className='font-bold text-lg mb-5'>Install App</p>
+                <p className='font-bold text-lg mb-10'>Install App</p>
                 <p>Download our app from App Store or</p>
                 <p>Google play Store</p>
-                <div className='flex w-[150px] ml-[-10px] mt-4'>
-                    <img src={AppStore} alt="" />
-                    <img src={GooglePlay} alt="" />
+                <div className='flex w-[150px] ml-[-10px] mt-10'>
+                    <img src={AppStore} alt="" className='cursor-pointer hover:scale-105 duration-300' />
+                    <img src={GooglePlay} alt="" className='cursor-pointer hover:scale-105 duration-300' />
                 </div>
             </div>
         </div>

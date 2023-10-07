@@ -2,28 +2,15 @@ import React from 'react'
 import Product from './Product'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 const Carousel = () => {
-    let box = document.querySelector('.product-container');
-
-    const btnpressprev = () => {
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft - width;
-        console.log(width)
-    }
-
-    const btnpressnext = () => {
-        let width = box.clientWidth;
-        box.scrollLeft = box.scrollLeft + width;
-        console.log(width)
-    }
 
     const slideLeft = () => {
         var slider = document.getElementById('slider');
-        slider.scrollLeft = slider.scrollLeft - 500;
+        slider.scrollLeft = slider.scrollLeft - 550;
     };
 
     const slideRight = () => {
         var slider = document.getElementById('slider');
-        slider.scrollLeft = slider.scrollLeft + 500;
+        slider.scrollLeft = slider.scrollLeft + 550;
     };
     
     return (

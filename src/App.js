@@ -16,7 +16,7 @@ function App() {
       <Path />
       <ProductDetails />
       <Details />
-      {/* <Carousel /> */}
+      <Carousel />
       <Footer />
     </>
     

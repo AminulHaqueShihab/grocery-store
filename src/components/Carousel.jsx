@@ -1,5 +1,6 @@
 import React from 'react'
 import Product from './Product'
+import { PRODUCTS } from '../Products';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 const Carousel = () => {
 
@@ -27,6 +28,11 @@ const Carousel = () => {
                     id='slider'
                     className='w-full h-full overflow-x-scroll scroll 
                     whitespace-nowrap scroll-smooth scrollbar-hide flex'>
+                    {PRODUCTS.map((product) => (
+
+                        <Product data={product} />
+                    ))}
+                    {/* <Product />
                     <Product />
                     <Product />
                     <Product />
@@ -36,8 +42,7 @@ const Carousel = () => {
                     <Product />
                     <Product />
                     <Product />
-                    <Product />
-                    <Product />
+                    <Product /> */}
                 </div>
             </div>
             

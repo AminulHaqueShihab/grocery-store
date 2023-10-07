@@ -8,7 +8,13 @@ import Ads from '../assets/ads.jfif';
 import { GrCart } from 'react-icons/gr';
 import { MdOutlineFavoriteBorder } from 'react-icons/md';
 import { FiShare2 } from 'react-icons/fi';
+import { useState } from 'react';
+
 const ProductDetails = () => {
+    const [favourite, setFavourite] = useState(false);
+    const handleFavourite = () => {
+        setFavourite(!favourite);
+    };
   return (
     <div className='flex px-20 mt-20 justify-between'>
         <div className='flex mr-30 w-[70%]'>
@@ -50,9 +56,13 @@ const ProductDetails = () => {
                         toplet with Shakti toilet cleaner</p>
                 </div>
                 <div className='flex gap-3 mt-5'>
-                    <button className='bg-[#0db04b] hover:bg-white hover:text-black font-bold flex py-2 px-20 rounded-md items-center text-white'><span className='mr-2'><GrCart size={20}/></span>Add to Cart</button>
-                    <button className='bg-white hover:bg-[#0db04b] p-2 rounded-md' p-2><MdOutlineFavoriteBorder size={30}/></button>
-                    <button className='bg-white hover:bg-[#0db04b] p-2 rounded-md'><FiShare2 size={30}/></button>
+                    <button className='bg-[#0db04b] hover:bg-white shadow hover:scale-105 duration-300 hover:text-black font-bold flex py-2 px-20 rounded-md items-center text-white'><span className='mr-2'><GrCart size={20}/></span>Add to Cart</button>
+                    {favourite ? 
+                        <button className=' bg-red-400 hover:scale-105 duration-300 shadow p-2 rounded-md fill-white' onClick={() => handleFavourite(!favourite)}><MdOutlineFavoriteBorder size={30}/></button>
+                        : <button className='bg-white hover:scale-105 duration-300 shadow p-2 rounded-md' onClick={() => handleFavourite(!favourite)}><MdOutlineFavoriteBorder size={30}/></button>
+                    }
+                    
+                    <button className='bg-white hover:scale-105 duration-300 shadow p-2 rounded-md'><FiShare2 size={30}/></button>
                 </div>
                 
             </div>
